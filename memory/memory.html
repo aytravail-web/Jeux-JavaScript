@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Memory</title>
+  <link rel="stylesheet" href="memory.css">
+</head>
+<body>
+
+  <header>
+    <h1>Jeu de Memory</h1>
+
+    <div class="controls">
+      <select id="difficulty">
+        <option value="4">Facile (4x4)</option>
+        <option value="5">Moyen (5x5)</option>
+        <option value="6">Difficile (6x6)</option>
+      </select>
+
+      <button id="restart">Nouvelle partie</button>
+    </div>
+  </header>
+
+  <main id="grid"></main>
+
+  <footer>
+    <p>Temps : <span id="time">0</span> s</p>
+    <p>Coups : <span id="moves">0</span></p>
+    <p>Paires trouvées : <span id="pairs">0</span></p>
+    <p>Meilleur temps : <span id="bestTime">-</span></p>
+    <p>Meilleurs coups : <span id="bestMoves">-</span></p>
+  </footer>
+
+  <div id="modal" class="hidden">
+    <div class="modal-content">
+      <h2>🎉 Partie terminée</h2>
+      <p id="summary"></p>
+      <button id="replay">Rejouer</button>
+    </div>
+  </div>
+
+  <script src="memory.js"></script>
+</body>
+</html>

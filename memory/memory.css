@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header, footer {
+  padding: 10px;
+  background: #f2f2f2;
+}
+
+.controls {
+  margin-top: 10px;
+}
+
+#grid {
+  flex: 1;
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+}
+
+.card {
+  font-size: 30px;
+  cursor: pointer;
+  height: 80px;
+  width: 80px;
+}
+
+.matched {
+  background-color: lightgreen;
+}
+
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  margin: 150px auto;
+  width: 300px;
+}
+
+.hidden {
+  display: none;
+}

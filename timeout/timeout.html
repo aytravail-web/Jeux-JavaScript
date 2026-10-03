@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Cookie Clicker</title>
+  <style>
+    #zone {
+      width: 500px;
+      height: 500px;
+      background-color: lightgray;
+      position: relative;
+      margin: 20px auto;
+    }
+
+    #cookie {
+      width: 50px;
+      height: 50px;
+      background-color: orange;
+      position: absolute;
+      display: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    #controls {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="zone">
+    <button id="cookie"></button>
+  </div>
+
+  <div id="controls">
+    <button id="start">START</button>
+    <br><br>
+    <input type="text" id="resultat" placeholder="Temps écoulé" readonly>
+  </div>
+
+  <script src="timeout.js"></script>
+
+</body>
+</html>
